@@ -1,0 +1,26 @@
+{
+  "name": "client+schema.json",
+  "version": "0.1.0",
+  "description": "An Application/Schema+JSON Hypermedia Client, written with AngularJS",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpanahij/client-schema.json.git"
+  },
+  "author": "Brian P Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bpanahij/client-schema.json/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "rjs-build-analysis": "0.0.3",
+    "vows": "~0.7.0"
+  }
+}
