@@ -24,10 +24,7 @@ module.exports = function (grunt) {
           name: 'main',
           optimize: 'none',
           out: "./client/build/main.js",
-//          removeCombined: true,
           findNestedDependencies: true
-//          generateSourceMaps: true,
-//          preserveLicenseComments: false
         }
       }
     },

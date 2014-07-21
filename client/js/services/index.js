@@ -1,12 +1,9 @@
 define([
-  './countries',
-  './intercom',
   './socket',
   './debounce',
-  './json_client',
-  './nav_client',
-  './api_response_handler',
   './base_64',
-  './json_schema'
+  './api/endpoint_negotiator',
+  './api/endpoint_schema',
+  './api/endpoint_response_handlers'
 ], function () {
 });

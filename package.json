@@ -1,5 +1,5 @@
 {
-  "name": "client+schema.json",
+  "name": "client-schema.json",
   "version": "0.1.0",
   "description": "An Application/Schema+JSON Hypermedia Client, written with AngularJS",
   "repository": {

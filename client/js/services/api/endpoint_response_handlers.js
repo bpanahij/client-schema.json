@@ -11,7 +11,7 @@ define(['./../module'], function (services) {
       const ERROR_CODE = 400;
       var httpHandlers = {};
       /**
-       *
+       * Set the Headers with response data
        * @param response
        */
       httpHandlers.setHeaders = function (response) {

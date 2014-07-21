@@ -1,18 +1,19 @@
 define([
   'angular',
-  './controllers/index',
-  './directives/index',
+  'angular-resource',
   './filters/index',
-  './services/index',
-  './schema_app'
-], function (ng) {
+  './services/index'
+], function (angular) {
   'use strict';
-  return ng.module('app', [
-    'schemaApp',
+  return angular.module('client-schema', [
+    'ngResource',
     'app.services',
-    'app.controllers',
-    'app.filters',
-    'app.directives',
-    'dragAndDrop'
-  ]).run(function() {});
+    'app.filters'
+  ]).config([
+    '$httpProvider',
+    function ($httpProvider) {
+      // Intercept response and handle success (2XX), redirects (3XX), and error (4XX-5XX) codes
+      $httpProvider.interceptors.push('ApiResponseHandler');
+    }
+  ]).run();
 });
