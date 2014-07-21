@@ -27,22 +27,6 @@ module.exports = function (grunt) {
           findNestedDependencies: true
         }
       }
-    },
-    concat: {
-      css: {
-        src: [
-          'client/client.css',
-          'client/css/bootstrap.min.css',
-          'client/css/bootstrap-theme.min.css'
-        ],
-        dest: 'client/build/combined.css'
-      }
-    },
-    cssmin : {
-      css:{
-        src: 'client/build/combined.css',
-        dest: 'client/build/combined.min.css'
-      }
     }
   });
 
@@ -51,11 +35,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
   grunt.registerTask('build', ['requirejs:std']);
   grunt.registerTask('dev', ['requirejs:dev']);
-  grunt.registerTask('css', ['concat:css', 'cssmin:css']);
 
 };
